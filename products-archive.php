@@ -77,7 +77,6 @@
             <section class="section">
               <div class="card">
                 <div class="card-body">
-
                   <table class="table" id="productsArchiveDataTable">
                     <thead>
                       <tr>
