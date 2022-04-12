@@ -14,10 +14,10 @@ while ($row = $query->fetch_assoc()) {
 
     $actionButtons = '
     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editProductModal" onclick="editProduct(' . $row['id'] . ')">
-      <i class="fa-solid fa-pen-to-square"></i>
+      <i class="fa-solid fa-pen"></i>
     </button>
     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#removeProductModal" onclick="removeProduct(' . $row['id'] . ')">
-      <i class="fa-solid fa-trash-can"></i>
+      <i class="fa-solid fa-trash"></i>
     </button>
     ';
 

@@ -17,7 +17,7 @@ while ($row = $query->fetch_assoc()) {
       <i class="fa-solid fa-rotate-left"></i>
     </button>
     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteProductModal" onclick="deleteProduct(' . $row['id'] . ')">
-      <i class="fa-solid fa-trash-can"></i>
+      <i class="fa-solid fa-ban"></i>
     </button>
     ';
 
