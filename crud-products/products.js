@@ -4,6 +4,12 @@ let productsArchiveDataTable;
 $(document).ready(function () {
   // Fetch all products
   productsDataTable = $("#productsDataTable").DataTable({
+    columnDefs: [
+      {
+        orderable: false,
+        targets: 6,
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",
@@ -13,6 +19,12 @@ $(document).ready(function () {
 
   // Fetch archived products
   productsArchiveDataTable = $("#productsArchiveDataTable").DataTable({
+    columnDefs: [
+      {
+        orderable: false,
+        targets: 6,
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",
