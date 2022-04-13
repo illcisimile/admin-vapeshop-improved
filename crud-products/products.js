@@ -49,7 +49,7 @@ $(document).ready(function () {
               text: response.message,
               duration: 2000,
               gravity: "top",
-              position: "right",
+              position: "center",
               backgroundColor: "#198754",
             }).showToast();
             $("#addProductForm")[0].reset();
@@ -100,7 +100,7 @@ function editProduct(id = null) {
                     text: response.message,
                     duration: 2000,
                     gravity: "top",
-                    position: "right",
+                    position: "center",
                     backgroundColor: "#198754",
                   }).showToast();
                   $("#editProductForm")[0].reset();
@@ -135,7 +135,7 @@ function removeProduct(id = null) {
                 text: response.message,
                 duration: 2000,
                 gravity: "top",
-                position: "right",
+                position: "center",
                 backgroundColor: "#198754",
               }).showToast();
               $("#removeProductModal").modal("hide");
@@ -166,7 +166,7 @@ function restoreProduct(id = null) {
                 text: response.message,
                 duration: 2000,
                 gravity: "top",
-                position: "right",
+                position: "center",
                 backgroundColor: "#198754",
               }).showToast();
               $("#restoreProductModal").modal("hide");
@@ -197,7 +197,7 @@ function deleteProduct(id = null) {
                 text: response.message,
                 duration: 2000,
                 gravity: "top",
-                position: "right",
+                position: "center",
                 backgroundColor: "#198754",
               }).showToast();
               $("#deleteProductModal").modal("hide");
