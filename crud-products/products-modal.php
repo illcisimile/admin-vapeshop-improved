@@ -1,3 +1,15 @@
+<?php
+
+include_once 'database/config.php';
+
+$sqlProduct = "SELECT * FROM products_category";
+
+$queryAddCategory = mysqli_query($connection, $sqlProduct);
+
+$queryEditProduct = mysqli_query($connection, $sqlProduct);
+
+?>
+
 <!-- Add Modal -->
 <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProduct" aria-hidden="true">
   <div class="modal-dialog">
@@ -17,10 +29,12 @@
           <div class="mb-3">
             <label for="productCategory" class="form-label">Category</label>
             <select class="form-select" id="productCategory" name="productCategory">
-              <option value="Mod" selected>Mod</option>
-              <option value="Pod">Pod</option>
-              <option value="Atomizer">Atomizer</option>
-              <option value="Accessories">Accessories</option>
+              <option selected>Select product category</option>
+              <?php
+              while ($addCategory = mysqli_fetch_assoc($queryAddCategory)) {
+                echo '<option value="' . $addCategory['category_name'] . '">' . $addCategory['category_name'] . '</option>';
+              }
+              ?>
             </select>
           </div>
           <!-- Brand -->
@@ -69,10 +83,12 @@
           <div class="mb-3">
             <label for="editProductCategory" class="form-label">Category</label>
             <select class="form-select" id="editProductCategory" name="editProductCategory">
-              <option value="Mod" selected>Mod</option>
-              <option value="Pod">Pod</option>
-              <option value="Atomizer">Atomizer</option>
-              <option value="Accessories">Accessories</option>
+              <option selected>Select product category</option>
+              <?php
+              while ($editCategory = mysqli_fetch_assoc($queryEditProduct)) {
+                echo '<option value="' . $editCategory['category_name'] . '">' . $editCategory['category_name'] . '</option>';
+              }
+              ?>
             </select>
           </div>
           <!-- Brand -->
