@@ -1,12 +1,12 @@
 <?php
 
-include_once 'database/config.php';
+require_once 'database/config.php';
 
-$sqlProduct = "SELECT * FROM products_category";
+$sqlCategory = "SELECT * FROM products_category";
 
-$queryAddCategory = mysqli_query($connection, $sqlProduct);
+$queryAddCategory = mysqli_query($connection, $sqlCategory);
 
-$queryEditProduct = mysqli_query($connection, $sqlProduct);
+$queryEditCategory = mysqli_query($connection, $sqlCategory);
 
 ?>
 
@@ -32,7 +32,8 @@ $queryEditProduct = mysqli_query($connection, $sqlProduct);
               <option selected>Select product category</option>
               <?php
               while ($addCategory = mysqli_fetch_assoc($queryAddCategory)) {
-                echo '<option value="' . $addCategory['category_name'] . '">' . $addCategory['category_name'] . '</option>';
+                $addCategoryName = $addCategory['category_name'];
+                echo '<option value="' . $addCategoryName . '">' . $addCategoryName . '</option>';
               }
               ?>
             </select>
@@ -85,8 +86,9 @@ $queryEditProduct = mysqli_query($connection, $sqlProduct);
             <select class="form-select" id="editProductCategory" name="editProductCategory">
               <option selected>Select product category</option>
               <?php
-              while ($editCategory = mysqli_fetch_assoc($queryEditProduct)) {
-                echo '<option value="' . $editCategory['category_name'] . '">' . $editCategory['category_name'] . '</option>';
+              while ($editCategory = mysqli_fetch_assoc($queryEditCategory)) {
+                $editCategoryName = $editCategory['category_name'];
+                echo '<option value="' . $editCategoryName . '">' . $editCategoryName . '</option>';
               }
               ?>
             </select>
