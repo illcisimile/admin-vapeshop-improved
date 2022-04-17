@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Header -->
   <?php include 'includes/header.html'?>
-
+  <!-- Header -->
   <body>
     <div id="app">
       <!-- Sidebar -->
