@@ -79,7 +79,7 @@
           <section class="section">
             <div class="card">
               <div class="card-body">
-                <table class="table" id="productsArchiveDataTable">
+                <table class="table table-hover" id="productsArchiveDataTable">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -105,7 +105,7 @@
 
   <!-- CRUD operations for Products -->
   <script src="crud-products/products.js"></script>
-  <?php include 'crud-products/products-modal.html' ?>
+  <?php include 'crud-products/products-modal.php' ?>
 </body>
 
 </html>

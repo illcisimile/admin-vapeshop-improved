@@ -82,7 +82,7 @@
                 <!-- Add product modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">Add new product</button>
                 <hr />
-                <table class="table" id="productsDataTable">
+                <table class="table table-hover" id="productsDataTable">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
