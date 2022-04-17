@@ -107,6 +107,6 @@
 
     <!-- CRUD operations for Products -->
     <script src="crud-products/products.js"></script>
-    <?php include 'crud-products/products-modal.html'?>
+    <?php include 'crud-products/products-modal.php'?>
   </body>
 </html>
