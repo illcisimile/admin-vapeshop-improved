@@ -44,6 +44,9 @@
                 <li class="submenu-item">
                   <a href="products-archive.php">Products Archive</a>
                 </li>
+                <li class="submenu-item">
+                  <a href="products-category.php">Products Category</a>
+                </li>
               </ul>
             </li>
           </ul>
