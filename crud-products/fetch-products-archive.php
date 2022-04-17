@@ -12,7 +12,7 @@ $x = 1;
 
 while ($row = $query->fetch_assoc()) {
 
-    $actionButtons = '
+  $actionButtons = '
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#restoreProductModal" onclick="restoreProduct(' . $row['id'] . ')">
       <i class="fa-solid fa-rotate-left"></i>
     </button>
@@ -21,17 +21,17 @@ while ($row = $query->fetch_assoc()) {
     </button>
     ';
 
-    $output['data'][] = array(
-        $x++,
-        $row['product_name'],
-        $row['product_category'],
-        $row['brand'],
-        $row['supplier'],
-        $row['price'],
-        $actionButtons,
-    );
+  $output['data'][] = array(
+    $x++,
+    $row['product_name'],
+    $row['product_category'],
+    $row['brand'],
+    $row['supplier'],
+    $row['price'],
+    $actionButtons,
+  );
 
-    // $x++;
+  // $x++;
 }
 
 // Close database connection
