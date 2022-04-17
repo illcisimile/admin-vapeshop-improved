@@ -1,6 +1,7 @@
 let productsCategoryDataTable;
 
 $(document).ready(function () {
+  // Fetch category table
   productsCategoryDataTable = $("#productsCategoryDataTable").DataTable({
     columnDefs: [
       {
@@ -15,6 +16,7 @@ $(document).ready(function () {
     ajax: "crud-products-category/fetch-products-category.php",
   });
 
+  // Add new category
   $("#addCategoryForm")
     .unbind("submit")
     .bind("submit", function () {
@@ -46,6 +48,7 @@ $(document).ready(function () {
     });
 });
 
+// Edit category
 function editCategory(id = null) {
   if (id) {
     $("#categoryID").remove();
@@ -94,6 +97,7 @@ function editCategory(id = null) {
   }
 }
 
+// Delete category
 function deleteCategory(id = null) {
   if (id) {
     $("#deleteCategoryButton")
