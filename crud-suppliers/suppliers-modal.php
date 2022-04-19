@@ -104,3 +104,37 @@
     </div>
   </div>
 </div>
+
+<!-- Restore Supplier Modal -->
+<div class="modal fade" id="restoreSupplierModal" tabindex="-1" aria-labelledby="restoreSupplier" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="restoreSupplier">Restore supplier</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">Are you sure you want to restore this supplier?</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="restoreSupplierButton">Restore</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Permanent Delete Supplier Modal -->
+<div class="modal fade" id="deleteSupplierModal" tabindex="-1" aria-labelledby="deleteSupplier" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteSupplier">Permanently remove supplier</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">Are you sure you want to permanently remove this supplier? This action cannot be undone.</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-danger" id="deleteSupplierButton">Remove permanently</button>
+      </div>
+    </div>
+  </div>
+</div>

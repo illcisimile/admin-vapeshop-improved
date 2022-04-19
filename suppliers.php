@@ -77,6 +77,9 @@
                 <li class="submenu-item active">
                   <a href="suppliers.php">List of Suppliers</a>
                 </li>
+                <li class="submenu-item">
+                  <a href="suppliers-archive.php">Suppliers Archive</a>
+                </li>
               </ul>
             </li>
           </ul>
