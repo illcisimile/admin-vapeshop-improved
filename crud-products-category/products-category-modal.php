@@ -8,6 +8,7 @@
       </div>
       <form action="crud-products-category/add-category.php" method="post" id="addCategoryForm">
         <div class="modal-body">
+          <!-- Category name -->
           <div class="mb-3">
             <label for="categoryName" class="form-label">Category name</label>
             <input type="text" class="form-control" id="categoryName" name="categoryName" />
@@ -32,6 +33,7 @@
       </div>
       <form action="crud-products-category/edit-category.php" method="post" id="editCategoryForm">
         <div class="modal-body">
+          <!-- Category name -->
           <div class="mb-3">
             <label for="editCategoryName" class="form-label">Category name</label>
             <input type="text" class="form-control" id="editCategoryName" name="editCategoryName" />

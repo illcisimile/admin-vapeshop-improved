@@ -67,6 +67,18 @@
                 </li>
               </ul>
             </li>
+
+            <li class="sidebar-item has-sub">
+              <a href="#" class="sidebar-link">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Supplier</span>
+              </a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="suppliers.php">List of Suppliers</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>

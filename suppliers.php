@@ -32,13 +32,13 @@
 
             <li class="sidebar-title">Modules</li>
 
-            <li class="sidebar-item active has-sub">
+            <li class="sidebar-item has-sub">
               <a href="#" class="sidebar-link">
                 <i class="bi bi-grid-1x2-fill"></i>
                 <span>Products</span>
               </a>
-              <ul class="submenu active">
-                <li class="submenu-item active">
+              <ul class="submenu">
+                <li class="submenu-item">
                   <a href="index.php">List of Products</a>
                 </li>
                 <li class="submenu-item">
@@ -68,13 +68,13 @@
               </ul>
             </li>
 
-            <li class="sidebar-item has-sub">
+            <li class="sidebar-item active has-sub">
               <a href="#" class="sidebar-link">
                 <i class="bi bi-grid-1x2-fill"></i>
                 <span>Supplier</span>
               </a>
-              <ul class="submenu">
-                <li class="submenu-item">
+              <ul class="submenu active">
+                <li class="submenu-item active">
                   <a href="suppliers.php">List of Suppliers</a>
                 </li>
               </ul>
@@ -96,14 +96,14 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>List of Products</h3>
+                <h3>List of Suppliers</h3>
                 <p class="text-subtitle text-muted">Dummy content here!</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">List of Products</li>
+                    <li class="breadcrumb-item active" aria-current="page">List of Suppliers</li>
                   </ol>
                 </nav>
               </div>
@@ -112,18 +112,18 @@
           <section class="section">
             <div class="card">
               <div class="card-body">
-                <!-- Add product modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">Add new product</button>
+                <!-- Add supplier modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSupplierModal">Add new supplier</button>
                 <hr />
-                <table class="table table-hover" id="productsDataTable">
+                <table class="table table-hover" id="suppliersDataTable">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Product name</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">Brand</th>
-                      <th scope="col">Supplier</th>
-                      <th scope="col">Price</th>
+                      <th scope="col">Supplier name</th>
+                      <th scope="col">Contact no.</th>
+                      <th scope="col">E-mail</th>
+                      <th scope="col">Website</th>
+                      <th scope="col">Address</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
@@ -139,9 +139,9 @@
 
   <?php include 'includes/scripts.html' ?>
 
-  <!-- CRUD operations for Products -->
-  <script src="crud-products/products.js"></script>
-  <?php include 'crud-products/products-modal.php' ?>
+  <!-- CRUD operations for Supplier -->
+  <script src="crud-suppliers/suppliers.js"></script>
+  <?php include 'crud-suppliers/suppliers-modal.php' ?>
 </body>
 
 </html>
