@@ -32,31 +32,31 @@
 
             <li class="sidebar-title">Modules</li>
 
-            <li class="sidebar-item active has-sub">
+            <li class="sidebar-item has-sub">
               <a href="#" class="sidebar-link">
                 <i class="bi bi-grid-1x2-fill"></i>
                 <span>Products</span>
               </a>
-              <ul class="submenu active">
+              <ul class="submenu">
                 <li class="submenu-item">
                   <a href="index.php">List of Products</a>
                 </li>
                 <li class="submenu-item">
                   <a href="products-archive.php">Products Archive</a>
                 </li>
-                <li class="submenu-item active">
+                <li class="submenu-item">
                   <a href="products-category.php">Products Category</a>
                 </li>
               </ul>
             </li>
 
-            <li class="sidebar-item has-sub">
+            <li class="sidebar-item active has-sub">
               <a href="#" class="sidebar-link">
                 <i class="bi bi-grid-1x2-fill"></i>
                 <span>Stocks</span>
               </a>
-              <ul class="submenu">
-                <li class="submenu-item">
+              <ul class="submenu active">
+                <li class="submenu-item active">
                   <a href="add-new-stock.php">Add New Stock</a>
                 </li>
                 <li class="submenu-item">
@@ -84,14 +84,14 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Products Category</h3>
+                <h3>Add New Stock</h3>
                 <p class="text-subtitle text-muted">Dummy content here!</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Products Category</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add New Stock</li>
                   </ol>
                 </nav>
               </div>
@@ -100,14 +100,14 @@
           <section class="section">
             <div class="card">
               <div class="card-body">
-                <!-- Add category modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">Add new category</button>
-                <hr />
-                <table class="table table-hover" id="productsCategoryDataTable">
+                <table class="table table-hover" id="newStocksDataTable">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Category name</th>
+                      <th scope="col">Product name</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Warning Quantity</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
@@ -123,9 +123,9 @@
 
   <?php include 'includes/scripts.html' ?>
 
-  <!-- CRUD operations for Products Category -->
-  <script src="crud-products-category/products-category.js"></script>
-  <?php include 'crud-products-category/products-category-modal.php' ?>
+  <!-- CRUD operations for Stocks -->
+  <script src="crud-stocks/stocks.js"></script>
+  <?php include 'crud-stocks/stocks-modal.php' ?>
 </body>
 
 </html>

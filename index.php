@@ -49,6 +49,24 @@
                 </li>
               </ul>
             </li>
+
+            <li class="sidebar-item has-sub">
+              <a href="#" class="sidebar-link">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Stocks</span>
+              </a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="add-new-stock.php">Add New Stock</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="stocks.php">Manage Stocks</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="critical-stocks.php">Critical Stocks</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
