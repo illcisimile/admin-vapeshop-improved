@@ -25,7 +25,7 @@
 
             <li class="sidebar-item">
               <a href="index.php" class="sidebar-link">
-                <i class="bi bi-grid-fill"></i>
+                <i class="fa-solid fa-gauge"></i>
                 <span>Dashboard</span>
               </a>
             </li>
@@ -34,7 +34,7 @@
 
             <li class="sidebar-item active has-sub">
               <a href="#" class="sidebar-link">
-                <i class="bi bi-grid-1x2-fill"></i>
+                <i class="fa-solid fa-box"></i>
                 <span>Products</span>
               </a>
               <ul class="submenu active">
@@ -52,7 +52,7 @@
 
             <li class="sidebar-item has-sub">
               <a href="#" class="sidebar-link">
-                <i class="bi bi-grid-1x2-fill"></i>
+                <i class="fa-solid fa-boxes-stacked"></i>
                 <span>Stocks</span>
               </a>
               <ul class="submenu">
@@ -70,7 +70,7 @@
 
             <li class="sidebar-item has-sub">
               <a href="#" class="sidebar-link">
-                <i class="bi bi-grid-1x2-fill"></i>
+                <i class="fa-solid fa-truck-field"></i>
                 <span>Supplier</span>
               </a>
               <ul class="submenu">
