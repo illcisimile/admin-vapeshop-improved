@@ -3,10 +3,12 @@
 require_once 'database/config.php';
 
 $sqlCategory = "SELECT * FROM products_category";
-
 $queryAddCategory = mysqli_query($connection, $sqlCategory);
-
 $queryEditCategory = mysqli_query($connection, $sqlCategory);
+
+$sqlSupplier = "SELECT * FROM suppliers WHERE is_deleted = '0'";
+$queryAddSupplier = mysqli_query($connection, $sqlSupplier);
+$queryEditSupplier = mysqli_query($connection, $sqlSupplier);
 
 ?>
 
@@ -47,7 +49,13 @@ $queryEditCategory = mysqli_query($connection, $sqlCategory);
           <div class="mb-3">
             <label for="supplier" class="form-label">Supplier</label>
             <select class="form-select" id="supplier" name="supplier">
-              <option value="VapeOmatics Vape Lounge" selected>VapeOmatics Vape Lounge</option>
+              <option selected>Select supplier</option>
+              <?php
+              while ($addSupplier = mysqli_fetch_assoc($queryAddSupplier)) {
+                $addSupplierName = $addSupplier['supplier_name'];
+                echo '<option value="' . $addSupplierName . '">' . $addSupplierName . '</option>';
+              }
+              ?>
             </select>
           </div>
           <!-- Price -->
@@ -102,7 +110,13 @@ $queryEditCategory = mysqli_query($connection, $sqlCategory);
           <div class="mb-3">
             <label for="editSupplier" class="form-label">Supplier</label>
             <select class="form-select" id="editSupplier" name="editSupplier">
-              <option value="VapeOmatics Vape Lounge" selected>VapeOmatics Vape Lounge</option>
+              <option selected>Select supplier</option>
+              <?php
+              while ($editSupplier = mysqli_fetch_assoc($queryEditSupplier)) {
+                $editSupplierName = $editSupplier['supplier_name'];
+                echo '<option value="' . $editSupplierName . '">' . $editSupplierName . '</option>';
+              }
+              ?>
             </select>
           </div>
           <!-- Price -->
