@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Header -->
-<?php include 'includes/header.html' ?>
+<?php
+$pageName = 'Manage Stocks - Vape Shop';
+include 'includes/header.php';
+?>
 <!-- Header -->
 
 <body>
