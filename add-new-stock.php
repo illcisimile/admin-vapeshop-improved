@@ -4,6 +4,12 @@
 <?php
 $pageName = 'Add New Stock - Vape Shop';
 include 'includes/header.php';
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+  header('Location: login.php');
+}
 ?>
 <!-- Header -->
 
@@ -94,7 +100,7 @@ include 'includes/header.php';
     <!-- Sidebar -->
     <div id="main" class="layout-navbar">
       <!-- Navbar -->
-      <?php include 'includes/navbar.html' ?>
+      <?php include 'includes/navbar.php' ?>
       <!-- Navbar -->
 
       <!-- Main content -->
